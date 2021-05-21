@@ -11,7 +11,7 @@ exports.userRegistration = function(req, res) {
         res.send("values not given");
     } else {
         value.emailVarify = validator.validate(req.body.email);
-        if (value.emailVarify == true) {
+        if (value.emailVerify == true) {
             value.email = req.body.email;
             value.password = req.body.password;
             value.name = req.body.name;
@@ -40,8 +40,8 @@ exports.adminRegistration = function(req, res) {
         req.body.phone == null || req.body.phone === "") {
         res.send("values not given");
     } else {
-        value.emailVarify = validator.validate(req.body.email);
-        if (value.emailVarify == true) {
+        value.emailVerify = validator.validate(req.body.email);
+        if (value.emailVerify == true) {
             value.email = req.body.email;
             value.password = req.body.password;
             value.name = req.body.name;
