@@ -10,9 +10,9 @@ exports.loginUser = function(req, res) {
     } else {
 
         var value = {};
-        value.emailVarify = validator.validate(req.body.email);
+        value.emailVerify = validator.validate(req.body.email);
 
-        if (value.emailVarify == true) {
+        if (value.emailVerify == true) {
 
             value.email = req.body.email;
             value.password = req.body.password;

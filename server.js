@@ -1,6 +1,6 @@
 const http = require('http');
 const express = require('express');
-const fs = require('fs');
+//const fs = require('fs');
 const app = express()
 
 app.use(express.urlencoded({ extended: false }));
@@ -9,13 +9,6 @@ app.use(express.urlencoded({ extended: false }));
 app.get('/', (req, res) => {
     res.render('index.html')
 })
-
-//api.authRouter(app);
-app.listen(3000);
-const http = require('http');
-const express = require('express');
-const fs = require('fs');
-const app = express()
 
 app.use(express.urlencoded({ extended: false }));
 
